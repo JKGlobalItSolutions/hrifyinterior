@@ -97,7 +97,7 @@ const Contact = () => {
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">Phone</p>
                     <p className="font-body text-muted-foreground text-sm">+91 8608601049,
-              +91 8608600772</p>
+                      +91 8608600772</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

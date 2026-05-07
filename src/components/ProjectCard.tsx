@@ -5,15 +5,17 @@ interface Props {
   title: string;
   category: string;
   index: number;
+  onClick?: () => void;
 }
 
-const ProjectCard = ({ image, title, category, index }: Props) => (
+const ProjectCard = ({ image, title, category, index, onClick }: Props) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.95 }}
     whileInView={{ opacity: 1, scale: 1 }}
     viewport={{ once: true, margin: "-30px" }}
     transition={{ duration: 0.4, delay: index * 0.08 }}
     className="group relative rounded-2xl overflow-hidden img-zoom cursor-pointer"
+    onClick={onClick}
   >
     <img src={image} alt={title} className="w-full h-64 md:h-72 object-cover" loading="lazy" />
     <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/60 transition-all duration-300 flex items-end">

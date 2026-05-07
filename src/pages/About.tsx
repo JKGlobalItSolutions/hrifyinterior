@@ -335,9 +335,8 @@ const About = () => (
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className={`relative flex items-start gap-6 mb-12 last:mb-0 md:w-1/2 ${
-                i % 2 === 0 ? "md:pr-12 md:ml-0" : "md:pl-12 md:ml-auto"
-              }`}
+              className={`relative flex items-start gap-6 mb-12 last:mb-0 md:w-1/2 ${i % 2 === 0 ? "md:pr-12 md:ml-0" : "md:pl-12 md:ml-auto"
+                }`}
             >
               {/* Number circle */}
               <div className="relative z-10 shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-heading font-bold text-lg">
